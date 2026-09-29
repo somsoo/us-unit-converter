@@ -1,308 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="/favicon.ico">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Universal Unit Converter | Length, Weight, Temp & Speed</title>
-    <meta name="description" content="Convert units instantly between Imperial (miles, lbs, °F, oz) and Metric (km, kg, °C, g) systems with precision decimals.">
-    <link rel="canonical" href="https://us-unit-converter.enjoy-onepage.com/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Universal Unit Converter | Length, Weight, Temp & Speed">
-    <meta property="og:description" content="Convert units instantly between Imperial (miles, lbs, °F, oz) and Metric (km, kg, °C, g) systems with precision decimals.">
-    <meta property="og:url" content="https://us-unit-converter.enjoy-onepage.com/">
-    <meta property="og:site_name" content="All-in-One Unit Converter">
-    <meta property="og:image" content="https://us-unit-converter.enjoy-onepage.com/og-image.png">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Universal Unit Converter | Length, Weight, Temp & Speed">
-    <meta name="twitter:description" content="Convert units instantly between Imperial (miles, lbs, °F, oz) and Metric (km, kg, °C, g) systems with precision decimals.">
-    <meta name="twitter:image" content="https://us-unit-converter.enjoy-onepage.com/og-image.png">
-
-    <!-- Schema.org WebApplication -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Universal Unit Converter | Length, Weight, Temp &amp; Speed</title>
+<meta name="description" content="Convert length, weight, temperature and speed between US and metric units with exact NIST factors. See every unit at once. Free and private.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://us-unit-converter.enjoy-onepage.com/">
+<meta name="theme-color" content="#0f766e">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Universal Unit Converter">
+<meta property="og:title" content="Universal Unit Converter | Length, Weight, Temp &amp; Speed">
+<meta property="og:description" content="Convert length, weight, temperature and speed between US and metric units with exact NIST factors. See every unit at once. Free and private.">
+<meta property="og:url" content="https://us-unit-converter.enjoy-onepage.com/">
+<meta property="og:image" content="https://us-unit-converter.enjoy-onepage.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Universal Unit Converter | Length, Weight, Temp &amp; Speed">
+<meta name="twitter:description" content="Convert length, weight, temperature and speed between US and metric units with exact NIST factors. See every unit at once. Free and private.">
+<meta name="twitter:image" content="https://us-unit-converter.enjoy-onepage.com/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="Universal Unit Converter RSS" href="https://us-unit-converter.enjoy-onepage.com/rss.xml">
+<link rel="sitemap" type="application/xml" href="https://us-unit-converter.enjoy-onepage.com/sitemap.xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "All-in-One Unit Converter",
+      "@id": "https://us-unit-converter.enjoy-onepage.com/#webapp",
+      "name": "Universal Unit Converter",
       "url": "https://us-unit-converter.enjoy-onepage.com/",
-      "description": "Convert units instantly between Imperial (miles, lbs, °F, oz) and Metric (km, kg, °C, g) systems with precision decimals.",
-      "applicationCategory": "UtilityApplication",
+      "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "All",
-      "inLanguage": "en-US",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
+      "inLanguage": "en",
+      "description": "A free unit converter for length, weight, temperature and speed. Converts between US customary and metric units using the exact conversion factors listed by NIST, and shows the result in every unit at once.",
+      "image": "https://us-unit-converter.enjoy-onepage.com/og-image.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://us-unit-converter.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "How many kilometers are in a mile?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Exactly 1.609344 kilometers. The international mile is defined as 1,609.344 meters, so to turn miles into kilometers multiply by 1.609344, and to turn kilometers into miles divide by it. For example, 5 miles is 8.04672 kilometers." } },
+        { "@type": "Question", "name": "How do I convert Fahrenheit to Celsius?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Subtract 32, then divide by 1.8 (the same as multiplying by 5/9). For example, 98.6 °F is (98.6 - 32) / 1.8 = 37 °C. To go the other way, multiply Celsius by 1.8 and add 32. Kelvin is Celsius plus 273.15." } },
+        { "@type": "Question", "name": "How many pounds are in a kilogram?",
+          "acceptedAnswer": { "@type": "Answer", "text": "About 2.204622622 pounds. The pound is defined as exactly 0.45359237 kilograms, so 1 kilogram is 1 divided by 0.45359237 pounds. An ounce is one sixteenth of a pound, or exactly 28.349523125 grams." } },
+        { "@type": "Question", "name": "What is a knot?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A knot is one nautical mile per hour. A nautical mile is exactly 1,852 meters, so a knot is 1.852 kilometers per hour, or about 1.151 miles per hour. It is the usual speed unit at sea and in aviation." } },
+        { "@type": "Question", "name": "How precise are the results?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The converter uses exact definitions for every factor and shows results to 10 significant digits, dropping trailing zeros. Very small or very large results are shown in scientific notation, such as 6.213712e-7 miles for 1 millimeter. Round the result to what your task needs." } }
+      ]
     }
-    </script>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Layout Shield: Anti 390px Horizontal Overflow -->
-    <style id="layout-shield">
-        html, body {
-            max-width: 100% !important;
-            width: 100% !important;
-            overflow-x: hidden !important;
-        }
-        main, article, .container {
-            max-width: 100% !important;
-            box-sizing: border-box !important;
-        }
-        .manual-ad-box {
-            width: 100%;
-            max-width: 960px;
-            overflow: hidden;
-            margin: 12px auto;
-        }
-        .manual-ad-box ins {
-            max-width: 100% !important;
-            display: block;
-        }
-    </style>
-  <link rel="alternate" type="application/rss+xml" title="Universal Unit Converter | Length, Weight, Temp &amp; Speed" href="https://us-unit-converter.enjoy-onepage.com/rss.xml">
-  <link rel="sitemap" type="application/xml" href="https://us-unit-converter.enjoy-onepage.com/sitemap.xml">
+  ]
+}
+</script>
+<!-- ADSENSE START: loader -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
+<!-- ADSENSE END: loader -->
+<style>
+:root{--bg:#f3f8f7;--card:#fff;--ink:#0f2a2a;--muted:#4f6464;--accent:#0f766e;--line:#d9e7e5;--r:#b91c1c}
+*{box-sizing:border-box}
+html,body{margin:0;max-width:100%;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.header{background:linear-gradient(135deg,#134e4a,#0d9488);color:#fff;text-align:center;padding:26px 16px 22px}
+.header h1{margin:0;font-size:1.7rem}
+.header-sub{opacity:.92;margin-top:6px;font-size:.95rem}
+.wrap{max-width:1080px;margin:0 auto;padding:12px 14px 8px}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:1024px){.grid2{grid-template-columns:1fr 1fr;align-items:start}.result{position:sticky;top:12px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:14px 0}
+.grid2 .card{margin:0}
+.card h2{font-size:1.15rem;margin:4px 0 10px}
+.card h3{font-size:1rem;margin:14px 0 6px}
+.lbl{display:block;font-weight:600;margin:10px 0 4px;font-size:.95rem}
+input[type=text],select{width:100%;font:inherit;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:600;font-size:.95rem;margin-bottom:4px;padding:0}
+.cats{display:flex;flex-wrap:wrap;gap:8px}
+.cats label{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer;font-size:.95rem}
+.cats label:has(input:checked){border-color:var(--accent);background:#ecfdf5;font-weight:700}
+.ft{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:end}
+.ft>div{min-width:0}
+.btn{font:inherit;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer}
+.btn.sm{padding:4px 9px;font-size:.85rem;border-radius:8px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.err{color:var(--r);font-weight:600;margin:8px 0 0}
+.hint{font-size:.86rem;color:var(--muted);margin:6px 0}
+.kpi{border:1px solid #bfe3dc;background:#effaf7;border-radius:12px;padding:10px 12px;margin:12px 0 6px}
+.kpi .v{font-size:1.9rem;font-weight:800;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.kpi .k{font-size:.9rem;color:var(--muted);overflow-wrap:anywhere}
+table{border-collapse:collapse;width:100%;font-size:.92rem;margin-top:6px}
+th,td{border-bottom:1px solid var(--line);padding:6px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+tr.sel td{background:#effaf7;font-weight:700}
+.notice{border-color:#fcd34d;background:#fffbeb}
+.faq-item h3{font-size:1rem;margin:12px 0 4px}
+.faq-item p{margin:0;color:#35494a}
+.src{font-size:.82rem;color:var(--muted)}
+.ad-box{max-width:1080px;margin:10px auto;padding:0 14px;background:transparent;overflow:hidden;text-align:center}
+.ad-top ins{max-height:90px}
+.footer{text-align:center;font-size:.85rem;color:var(--muted);padding:18px 14px 28px}
+.footer a{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#0f2a2a;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
+.toast.show{opacity:1}
+@media (prefers-reduced-motion: reduce){.toast{transition:none}}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+<body>
+<header class="header">
+  <h1>Universal Unit Converter</h1>
+  <div class="header-sub">Length · Weight · Temperature · Speed · exact NIST factors</div>
+</header>
 
-    <!-- Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 font-black text-slate-900 text-lg sm:text-xl tracking-tight">
-                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-black shadow-sm">1P</span>
-                <span>All-in-One Unit Converter</span>
-            </a>
-            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
-                2026 US Edition
-            </span>
-        </div>
-    </header>
+<!-- ADSENSE START: top -->
+<div class="ad-box ad-top">
+  <ins class="adsbygoogle" style="display:block;height:60px;max-height:90px" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3824727725" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: top -->
 
-    <!-- Main Workspace -->
-    <main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
-        <!-- Title Banner -->
-        <div class="mb-8 text-center max-w-2xl mx-auto">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-2">All-in-One Unit Converter</h1>
-            <p class="text-sm sm:text-base text-slate-600">Convert units instantly between Imperial (miles, lbs, °F, oz) and Metric (km, kg, °C, g) systems with precision decimals.</p>
+<main class="wrap">
+  <div class="grid2">
+    <section class="card" id="calc" aria-labelledby="in-h">
+      <h2 id="in-h">1. Convert</h2>
+      <fieldset>
+        <legend>What are you converting?</legend>
+        <div class="cats">
+          <label><input type="radio" name="cat" value="length" checked> Length</label>
+          <label><input type="radio" name="cat" value="weight"> Weight</label>
+          <label><input type="radio" name="cat" value="temp"> Temperature</label>
+          <label><input type="radio" name="cat" value="speed"> Speed</label>
         </div>
-
-        <!-- 2-Column Gold Standard Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <!-- Left: Input Form (6 cols) -->
-            <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-base font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                    <span>Input Parameters</span>
-                </h2>
-                
-        <div class="space-y-4">
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Primary Value / Amount ($)</label>
-                <div class="relative">
-                    <span class="absolute left-3 top-3 text-slate-400 font-bold">$</span>
-                    <input type="text" id="primaryVal" value="1,000" class="w-full pl-8 pr-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="1,000">
-                </div>
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Secondary Parameter / Multiplier</label>
-                <input type="number" id="secVal" value="12" min="1" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Calculation Category</label>
-                <select id="calcCat" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                    <option value="standard">Standard US Model (Benchmark)</option>
-                    <option value="conservative">Conservative Estimate (-10%)</option>
-                    <option value="growth">Accelerated Target (+15%)</option>
-                </select>
-            </div>
-        </div>
-        
-                <button type="button" onclick="calculate()" class="mt-6 w-full py-3.5 bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-black text-base rounded-xl shadow-md transition duration-150 cursor-pointer whitespace-nowrap">
-                    Calculate Now
-                </button>
-            </div>
-
-            <!-- Right: Results Card (6 cols sticky) -->
-            <div class="lg:col-span-6 lg:sticky lg:top-24">
-                <div id="resultCard" class="hidden">
-                    
-        <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-md mb-6">
-            <p class="text-xs uppercase font-bold tracking-wider opacity-90 mb-1">Estimated Annual Result</p>
-            <h3 id="resPrimary" class="text-3xl sm:text-4xl font-black tracking-tight">$0</h3>
-            <p class="text-xs mt-2 opacity-80">Calculated under standard US benchmarking formulas</p>
-        </div>
-        <div class="space-y-3 text-sm text-slate-700 bg-white p-5 rounded-2xl border border-slate-200">
-            <div class="flex justify-between pb-2 border-b border-slate-100">
-                <span class="text-slate-500">Monthly Equivalent:</span>
-                <span id="resMonthly" class="font-bold text-slate-900">$0</span>
-            </div>
-            <div class="flex justify-between pt-1">
-                <span class="font-bold text-slate-900">Growth / Variance Index:</span>
-                <span id="resBenchmark" class="font-black text-blue-600">0%</span>
-            </div>
-        </div>
-        
-                    <div class="mt-4 flex gap-3">
-                        <button type="button" onclick="copyResults()" class="flex-1 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm rounded-xl transition shadow-sm cursor-pointer whitespace-nowrap">
-                            Copy Results
-                        </button>
-                        <button type="button" onclick="resetForm()" class="px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm rounded-xl transition cursor-pointer whitespace-nowrap">
-                            Reset
-                        </button>
-                    </div>
-                </div>
-                <!-- Initial Placeholder -->
-                <div id="placeholderCard" class="p-8 text-center border-2 border-dashed border-slate-200 rounded-2xl text-slate-400">
-                    <p class="text-sm font-semibold">Enter your inputs on the left and click "Calculate Now" to view full projections.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- E-E-A-T Editorial FAQ Accordion -->
-        <section class="mt-14 max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
-            <h2 class="text-lg sm:text-xl font-black text-slate-900 mb-4">Frequently Asked Questions</h2>
-            <div class="space-y-3">
-                
-    <!-- In-Depth Guidebook CTA Banner (4-1-4 Compliance) -->
-    <div class="mt-8 mb-8 p-6 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl border border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <span class="inline-block px-3 py-1 bg-indigo-600 text-white text-xs font-bold rounded-full mb-2">COMPLETE 2026 HANDBOOK</span>
-        <h3 class="text-lg font-bold text-gray-900">Want to master the statutory details? Read our in-depth guide</h3>
-        <p class="text-xs text-gray-600 mt-1">Explore official calculation formulas, edge-case exemptions, and strategic checklists.</p>
+      </fieldset>
+      <label class="lbl" for="val">Value</label>
+      <input id="val" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" maxlength="24" value="1">
+      <div class="ft">
+        <div><label class="lbl" for="from">From</label><select id="from"></select></div>
+        <button type="button" class="btn" id="btn-swap" aria-label="Swap the from and to units" title="Swap units">⇄</button>
+        <div><label class="lbl" for="to">To</label><select id="to"></select></div>
       </div>
-      <a href="/guides/guide.html" class="whitespace-nowrap px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-md transition flex items-center gap-2 text-xs shrink-0">
-        Read In-Depth Guide &rarr;
-      </a>
-    </div>
+      <p class="err" id="err" role="alert" hidden></p>
+      <div class="kpi" aria-live="polite"><div class="v" id="res-v">—</div><div class="k" id="res-line"></div></div>
+      <p class="hint" id="factor"></p>
+      <div class="actions">
+        <button type="button" class="btn" id="btn-copy">📋 Copy</button>
+        <button type="button" class="btn" id="btn-share">📤 Share</button>
+      </div>
+    </section>
 
-    <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>How accurate are these calculations?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Calculations use 2026 statutory formulas and verified standard economic models. While highly accurate for benchmarking, always consult a certified professional for individual legal or financial filings.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Is my personal or financial data stored?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        No. 100% of the computations occur locally in your browser's JavaScript engine. Zero personal or financial data is transmitted to or saved on external servers.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Can I export or share my calculation results?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Yes! Click the "Copy Results" button to copy a formatted summary with a link directly to your clipboard for sharing via Slack, email, or messaging apps.
-                    </p>
-                </details>
-            </div>
-        </section>
-    </main>
+    <section class="card result" aria-labelledby="all-h">
+      <h2 id="all-h">2. The same value in every unit</h2>
+      <p class="hint" id="all-lead"></p>
+      <table>
+        <thead><tr><th scope="col">Unit</th><th scope="col" class="n">Value</th></tr></thead>
+        <tbody id="all"></tbody>
+      </table>
+    </section>
+  </div>
 
-    <!-- Floating Toast Notification -->
-    <div id="toastNotification" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white px-5 py-2.5 rounded-full text-xs font-bold shadow-2xl opacity-0 pointer-events-none transition-opacity duration-200 z-50">
-        Copied to clipboard!
-    </div>
+<!-- ADSENSE START: mid (right after the result card) -->
+<div class="ad-box ad-mid">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="1186914926" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: mid -->
 
-    <!-- Modern Trust Footer -->
-    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 mt-12">
-        <div class="max-w-6xl mx-auto px-4 space-y-3">
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-semibold text-slate-600">
-                <a href="/terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
-                <span class="text-slate-300">|</span>
-                <a href="/privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
-                <span class="text-slate-300">|</span>
-                <a href="/disclaimer.html" class="hover:text-blue-600 transition">Disclaimer</a>
-            </div>
-            <p class="max-w-xl mx-auto text-slate-400">
-                This tool is provided for educational and estimation purposes only. All calculations run client-side.
-            </p>
-            <p>&copy; 2026 All-in-One Unit Converter. All rights reserved.</p>
-        </div>
-    </footer>
+  <section class="card" aria-labelledby="how-h">
+    <h2 id="how-h">🧮 How the conversions work</h2>
+    <p>Every length, weight and speed is first changed into a base unit (meters, kilograms or meters per second) and then into the unit you want, using the exact values below. Temperatures go through Celsius.</p>
+    <div style="overflow-x:auto"><table><thead><tr><th scope="col">Unit</th><th scope="col" class="n">Exact value</th></tr></thead><tbody>
+      <tr><td>1 inch</td><td class="n">0.0254 m (2.54 cm)</td></tr>
+      <tr><td>1 foot</td><td class="n">0.3048 m</td></tr>
+      <tr><td>1 yard</td><td class="n">0.9144 m</td></tr>
+      <tr><td>1 mile</td><td class="n">1,609.344 m</td></tr>
+      <tr><td>1 nautical mile</td><td class="n">1,852 m</td></tr>
+      <tr><td>1 pound (avoirdupois)</td><td class="n">0.45359237 kg</td></tr>
+      <tr><td>1 ounce = 1/16 pound</td><td class="n">28.349523125 g</td></tr>
+      <tr><td>1 stone = 14 pounds</td><td class="n">6.35029318 kg</td></tr>
+      <tr><td>1 US (short) ton = 2,000 pounds</td><td class="n">907.18474 kg</td></tr>
+      <tr><td>1 mile per hour</td><td class="n">0.44704 m/s</td></tr>
+      <tr><td>1 kilometer per hour</td><td class="n">1/3.6 m/s</td></tr>
+      <tr><td>1 knot = 1 nautical mile per hour</td><td class="n">1,852/3,600 m/s</td></tr>
+      <tr><td>°C from °F</td><td class="n">(°F − 32) ÷ 1.8</td></tr>
+      <tr><td>K from °C</td><td class="n">°C + 273.15</td></tr>
+      <tr><td>K from °F</td><td class="n">(°F + 459.67) ÷ 1.8</td></tr>
+    </tbody></table></div>
+    <p>Results are shown to 10 significant digits without trailing zeros. Numbers under 0.000001 or of a thousand trillion or more are written in scientific notation, for example 6.213712e-7. Feet and miles here are the international foot and mile; the older U.S. survey foot (about 0.3048006 m) is not used.</p>
+    <p class="src">Sources: NIST Special Publication 811, Guide for the Use of the International System of Units, Appendix B.8, Factors for Units Listed Alphabetically (National Institute of Standards and Technology); the pound and yard values are the exact definitions of the 1959 international yard and pound agreement.</p>
+  </section>
 
-    <!-- Logic Script -->
-    <script>
-        
-        function calculate() {
-            const prim = parseFloat(document.getElementById('primaryVal').value.replace(/,/g, '')) || 0;
-            const sec = parseFloat(document.getElementById('secVal').value) || 1;
-            const cat = document.getElementById('calcCat').value;
-            
-            let mult = 1.0;
-            if (cat === 'conservative') mult = 0.90;
-            if (cat === 'growth') mult = 1.15;
-            
-            const total = prim * sec * mult;
-            const monthly = total / 12;
-            const rate = ((total / (prim || 1)) * 10).toFixed(1);
-            
-            document.getElementById('resPrimary').textContent = '$' + Math.round(total).toLocaleString('en-US');
-            document.getElementById('resMonthly').textContent = '$' + Math.round(monthly).toLocaleString('en-US');
-            document.getElementById('resBenchmark').textContent = rate + '%';
-            
-            document.getElementById('resultCard').classList.remove('hidden');
-        }
-        
+  <section class="card" id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">❓ Frequently asked questions</h2>
+    <div class="faq-item"><h3>How many kilometers are in a mile?</h3><p>Exactly 1.609344 kilometers. The international mile is defined as 1,609.344 meters, so to turn miles into kilometers multiply by 1.609344, and to turn kilometers into miles divide by it. For example, 5 miles is 8.04672 kilometers.</p></div>
+    <div class="faq-item"><h3>How do I convert Fahrenheit to Celsius?</h3><p>Subtract 32, then divide by 1.8 (the same as multiplying by 5/9). For example, 98.6 °F is (98.6 - 32) / 1.8 = 37 °C. To go the other way, multiply Celsius by 1.8 and add 32. Kelvin is Celsius plus 273.15.</p></div>
+    <div class="faq-item"><h3>How many pounds are in a kilogram?</h3><p>About 2.204622622 pounds. The pound is defined as exactly 0.45359237 kilograms, so 1 kilogram is 1 divided by 0.45359237 pounds. An ounce is one sixteenth of a pound, or exactly 28.349523125 grams.</p></div>
+    <div class="faq-item"><h3>What is a knot?</h3><p>A knot is one nautical mile per hour. A nautical mile is exactly 1,852 meters, so a knot is 1.852 kilometers per hour, or about 1.151 miles per hour. It is the usual speed unit at sea and in aviation.</p></div>
+    <div class="faq-item"><h3>How precise are the results?</h3><p>The converter uses exact definitions for every factor and shows results to 10 significant digits, dropping trailing zeros. Very small or very large results are shown in scientific notation, such as 6.213712e-7 miles for 1 millimeter. Round the result to what your task needs.</p></div>
+  </section>
 
-        function copyResults() {
-            const resCard = document.getElementById('resultCard');
-            const lines = [];
-            lines.push("All-in-One Unit Converter - Calculation Summary");
-            lines.push("=============================");
-            resCard.querySelectorAll('.flex.justify-between').forEach(el => {
-                const k = el.querySelector('span:first-child')?.innerText || '';
-                const v = el.querySelector('span:last-child')?.innerText || '';
-                if (k && v) lines.push(k + ' ' + v);
-            });
-            lines.push("-----------------------------");
-            lines.push("👉 Try it here: https://us-unit-converter.enjoy-onepage.com/");
-            
-            const textToCopy = lines.join('\n');
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(textToCopy).then(() => showToast());
-            } else {
-                const ta = document.createElement('textarea');
-                ta.value = textToCopy;
-                document.body.appendChild(ta);
-                ta.select();
-                document.execCommand('copy');
-                document.body.removeChild(ta);
-                showToast();
-            }
-        }
+  <section class="card notice" aria-labelledby="note-h">
+    <h2 id="note-h">⚠️ Please note</h2>
+    <p>This converter is for everyday and study use. For trade, legal metrology, medicine, engineering or navigation, follow the units, rounding and instruments your field requires.</p>
+  </section>
+</main>
 
-        function showToast() {
-            const t = document.getElementById('toastNotification');
-            t.classList.remove('opacity-0', 'pointer-events-none');
-            setTimeout(() => {
-                t.classList.add('opacity-0', 'pointer-events-none');
-            }, 2200);
-        }
+<!-- ADSENSE START: bottom -->
+<div class="ad-box ad-bottom">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3416334507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: bottom -->
 
-        function resetForm() {
-            document.getElementById('resultCard').classList.add('hidden');
-            document.getElementById('placeholderCard').classList.remove('hidden');
-        }
+<footer class="footer">
+  <p>A free unit converter. The values you enter are not saved or sent to us.</p>
+  <p><a href="/disclaimer.html">Disclaimer</a> | <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
+</footer>
 
-        // Auto calculate on load
-        window.addEventListener('DOMContentLoaded', () => {
-            calculate();
-            document.getElementById('placeholderCard').classList.add('hidden');
-        });
-    </script>
+<div id="global-ux-toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- LOGIC START -->
+<script>
+(function () {
+  'use strict';
+  var SITE = 'https://us-unit-converter.enjoy-onepage.com';
+  var TOOL_NAME = 'Universal Unit Converter';
+  /* Factors to the base unit (meter, kilogram, meter per second). Exact by definition, NIST SP 811 Appendix B.8 and the
+     1959 international yard and pound: in 0.0254 m, ft 0.3048 m, yd 0.9144 m, mi 1609.344 m, nmi 1852 m, lb 0.45359237 kg,
+     oz = lb / 16, st = 14 lb, US ton = 2000 lb, mph 0.44704 m/s, km/h 1000/3600 m/s, knot 1852/3600 m/s. */
+  var CATS = {
+    length: { name: 'Length', def: ['mi', 'km'], units: [
+      { id: 'mm', n: 'Millimeters', s: 'mm', f: 0.001 }, { id: 'cm', n: 'Centimeters', s: 'cm', f: 0.01 },
+      { id: 'm', n: 'Meters', s: 'm', f: 1 }, { id: 'km', n: 'Kilometers', s: 'km', f: 1000 },
+      { id: 'in', n: 'Inches', s: 'in', f: 0.0254 }, { id: 'ft', n: 'Feet', s: 'ft', f: 0.3048 },
+      { id: 'yd', n: 'Yards', s: 'yd', f: 0.9144 }, { id: 'mi', n: 'Miles', s: 'mi', f: 1609.344 },
+      { id: 'nmi', n: 'Nautical miles', s: 'nmi', f: 1852 }] },
+    weight: { name: 'Weight', def: ['lb', 'kg'], units: [
+      { id: 'mg', n: 'Milligrams', s: 'mg', f: 0.000001 }, { id: 'g', n: 'Grams', s: 'g', f: 0.001 },
+      { id: 'kg', n: 'Kilograms', s: 'kg', f: 1 }, { id: 't', n: 'Metric tons', s: 't', f: 1000 },
+      { id: 'oz', n: 'Ounces', s: 'oz', f: 0.028349523125 }, { id: 'lb', n: 'Pounds', s: 'lb', f: 0.45359237 },
+      { id: 'st', n: 'Stone', s: 'st', f: 6.35029318 }, { id: 'ton', n: 'US tons (short)', s: 'US tons', f: 907.18474 }] },
+    temp: { name: 'Temperature', def: ['f', 'c'], units: [
+      { id: 'c', n: 'Celsius', s: '°C' }, { id: 'f', n: 'Fahrenheit', s: '°F' }, { id: 'k', n: 'Kelvin', s: 'K' }] },
+    speed: { name: 'Speed', def: ['mph', 'kmh'], units: [
+      { id: 'mps', n: 'Meters per second', s: 'm/s', f: 1 }, { id: 'kmh', n: 'Kilometers per hour', s: 'km/h', f: 1000 / 3600 },
+      { id: 'mph', n: 'Miles per hour', s: 'mph', f: 0.44704 }, { id: 'fps', n: 'Feet per second', s: 'ft/s', f: 0.3048 },
+      { id: 'kn', n: 'Knots', s: 'kn', f: 1852 / 3600 }] }
+  };
+  var TEMP_RULE = {
+    'c>f': '°F = °C × 1.8 + 32', 'f>c': '°C = (°F − 32) ÷ 1.8', 'c>k': 'K = °C + 273.15', 'k>c': '°C = K − 273.15',
+    'f>k': 'K = (°F + 459.67) ÷ 1.8', 'k>f': '°F = K × 1.8 − 459.67'
+  };
+  var MIN_TEMP = { c: -273.15, f: -459.67, k: 0 };
+  var U = { cat: 'length', v: 1, from: 'mi', to: 'km' };
+  var LAST = null, toastTimer = null;
+  function $(id) { return document.getElementById(id); }
+  function on(id, ev, fn) { var el = $(id); if (el) el.addEventListener(ev, fn); }
+  function unit(cat, id) { var us = CATS[cat].units; for (var i = 0; i < us.length; i++) if (us[i].id === id) return us[i]; return null; }
+
+  /* ---------- math ---------- */
+  /* Direct NIST formulas for each pair (SP 811 B.8: T/K = (t/°F + 459.67)/1.8), so an exact input such as 32 °F, 273.15 K
+     or -459.67 °F lands exactly on 0, and a unit converted to itself is returned unchanged (no round trip through °C). */
+  var TEMP = {
+    'c>f': function (v) { return v * 1.8 + 32; }, 'f>c': function (v) { return (v - 32) / 1.8; },
+    'c>k': function (v) { return v + 273.15; }, 'k>c': function (v) { return v - 273.15; },
+    'f>k': function (v) { return (v + 459.67) / 1.8; }, 'k>f': function (v) { return v * 1.8 - 459.67; }
+  };
+  function convert(v, cat, from, to) {
+    if (from === to) return v;
+    if (cat === 'temp') return TEMP[from + '>' + to](v);
+    return v * unit(cat, from).f / unit(cat, to).f;
+  }
+  function fmt(x) {
+    if (!isFinite(x)) return '—';
+    if (x === 0) return '0';
+    var ax = Math.abs(x);
+    if (ax >= 1e15 || ax < 1e-6) return x.toExponential(6).replace(/\.?0+e/, 'e');
+    var p = Number(x.toPrecision(10));
+    if (p === 0) return '0';
+    var parts = String(p).split('.');
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return parts.join('.');
+  }
+
+  /* ---------- input ---------- */
+  var NUMRE = /^[+-]?(\d+\.?\d*|\.\d+)(e[+-]?\d+)?$/i;
+  function readValue() {
+    var raw = String($('val').value).replace(/\u2212/g, '-').replace(/[,\s]/g, '');
+    if (!NUMRE.test(raw)) return { err: 'Enter a number, like 5, 2.5 or 1,000.' };
+    var n = Number(raw);
+    if (!isFinite(n) || Math.abs(n) > 1e12) return { err: 'Use a number between -1,000,000,000,000 and 1,000,000,000,000.' };
+    if (U.cat === 'temp') {
+      if (n < MIN_TEMP[U.from]) return { err: 'That is colder than absolute zero (−273.15 °C, −459.67 °F or 0 K).' };
+    } else if (n < 0) {
+      return { err: 'Enter 0 or more. Negative lengths, weights and speeds are not converted.' };
+    }
+    return { v: n === 0 ? 0 : n };
+  }
+  function fillSelects() {
+    ['from', 'to'].forEach(function (id) {
+      var sel = $(id), html = '';
+      CATS[U.cat].units.forEach(function (u) { html += '<option value="' + u.id + '">' + u.n + ' (' + u.s + ')</option>'; });
+      sel.innerHTML = html;
+      sel.value = U[id];
+    });
+  }
+
+  /* ---------- render ---------- */
+  function render() {
+    var r = readValue(), uf = unit(U.cat, U.from), ut = unit(U.cat, U.to);
+    var e = $('err');
+    e.hidden = !r.err; e.textContent = r.err || '';
+    if (U.cat === 'temp') {
+      $('factor').textContent = U.from === U.to ? 'Same unit, so the value does not change.' : 'Formula: ' + TEMP_RULE[U.from + '>' + U.to];
+    } else {
+      $('factor').textContent = '1 ' + uf.s + ' = ' + fmt(uf.f / ut.f) + ' ' + ut.s;
+    }
+    var rows = '';
+    if (r.err) {
+      LAST = null;
+      $('res-v').textContent = '—';
+      $('res-line').textContent = 'Fix the value to see the result.';
+      $('all-lead').textContent = '';
+      CATS[U.cat].units.forEach(function (u) { rows += '<tr><td>' + u.n + ' (' + u.s + ')</td><td class="n">—</td></tr>'; });
+      $('all').innerHTML = rows;
+      return;
+    }
+    U.v = r.v;
+    var out = convert(U.v, U.cat, U.from, U.to);
+    LAST = { out: out };
+    $('res-v').textContent = fmt(out) + ' ' + ut.s;
+    $('res-line').textContent = fmt(U.v) + ' ' + uf.s + ' = ' + fmt(out) + ' ' + ut.s;
+    $('all-lead').textContent = fmt(U.v) + ' ' + uf.s + ' is:';
+    CATS[U.cat].units.forEach(function (u) {
+      var cls = u.id === U.to ? ' class="sel"' : '';
+      rows += '<tr' + cls + ' data-u="' + u.id + '"><td>' + u.n + ' (' + u.s + ')</td><td class="n">' + fmt(convert(U.v, U.cat, U.from, u.id)) + '</td></tr>';
+    });
+    $('all').innerHTML = rows;
+  }
+  function query() {
+    return '?cat=' + U.cat + '&v=' + encodeURIComponent(String(U.v)) + '&from=' + U.from + '&to=' + U.to;
+  }
+  function link() { return SITE + '/' + query(); }
+  function updateUrl() { if (!LAST) return; try { history.replaceState(null, '', location.pathname + query()); } catch (e) { /* ignore */ } }
+  function summary() {
+    if (!LAST) return '';
+    var uf = unit(U.cat, U.from), ut = unit(U.cat, U.to);
+    return '📏 ' + fmt(U.v) + ' ' + uf.s + ' = ' + fmt(LAST.out) + ' ' + ut.s + '\n👉 ' + TOOL_NAME + ': ' + link();
+  }
+  function showToastNotification(msg) {
+    var t = $('global-ux-toast'); if (!t) return;
+    t.textContent = msg; t.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { t.classList.remove('show'); }, 2200);
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    showToastNotification(ok ? 'Copied! Paste it anywhere to share.' : 'Could not copy. Please select the text and copy it yourself.');
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { showToastNotification('Copied! Paste it anywhere to share.'); }, function () { fallbackCopy(text); });
+    } else { fallbackCopy(text); }
+  }
+  function change() { render(); updateUrl(); }
+
+  /* ---------- events ---------- */
+  on('calc', 'change', function (e) {
+    var t = e.target;
+    if (t && t.name === 'cat' && CATS[t.value]) {
+      U.cat = t.value; U.from = CATS[U.cat].def[0]; U.to = CATS[U.cat].def[1];
+      fillSelects(); change();
+    } else if (t && (t.id === 'from' || t.id === 'to')) {
+      U[t.id] = t.value; change();
+    }
+  });
+  on('val', 'input', change);
+  on('btn-swap', 'click', function () {
+    var f = U.from; U.from = U.to; U.to = f;
+    $('from').value = U.from; $('to').value = U.to;
+    change();
+  });
+  on('btn-copy', 'click', function () { var t = summary(); if (t) copyText(t); else showToastNotification('Enter a valid value first.'); });
+  on('btn-share', 'click', function () {
+    var text = summary(); if (!text) { showToastNotification('Enter a valid value first.'); return; }
+    if (navigator.share) { navigator.share({ title: TOOL_NAME, text: text, url: link() }).catch(function (e) { if (!e || e.name !== 'AbortError') copyText(text); }); }
+    else { copyText(text); }
+  });
+
+  /* ---------- start: link values (?cat=length&v=5&from=mi&to=km) ---------- */
+  (function init() {
+    var q; try { q = new URLSearchParams(location.search); } catch (e) { q = null; }
+    if (q && Object.prototype.hasOwnProperty.call(CATS, q.get('cat'))) {
+      var c = q.get('cat'), f = q.get('from'), t = q.get('to'), v = q.get('v');
+      U.cat = c;
+      U.from = unit(c, f) ? f : CATS[c].def[0];
+      U.to = unit(c, t) ? t : CATS[c].def[1];
+      if (v !== null && NUMRE.test(v) && isFinite(Number(v)) && Math.abs(Number(v)) <= 1e12) $('val').value = v;
+    }
+    var radios = document.querySelectorAll('input[name="cat"]');
+    for (var i = 0; i < radios.length; i++) radios[i].checked = radios[i].value === U.cat;
+    fillSelects();
+    render();
+  })();
+})();
+</script>
+<!-- LOGIC END -->
 </body>
 </html>
